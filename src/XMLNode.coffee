@@ -24,13 +24,13 @@ module.exports = class XMLNode
     # first execution, load dependencies that are otherwise
     # circular (so we can't load them at the top)
     if XMLElement is null
-      XMLElement = require './XMLElement'
-      XMLCData = require './XMLCData'
-      XMLComment = require './XMLComment'
-      XMLDeclaration = require './XMLDeclaration'
-      XMLDocType = require './XMLDocType'
-      XMLRaw = require './XMLRaw'
-      XMLText = require './XMLText'
+      XMLElement = require './XMLElement.js'
+      XMLCData = require './XMLCData.js'
+      XMLComment = require './XMLComment.js'
+      XMLDeclaration = require './XMLDeclaration.js'
+      XMLDocType = require './XMLDocType.js'
+      XMLRaw = require './XMLRaw.js'
+      XMLText = require './XMLText.js'
 
 
   # Creates and returns a deep clone of `this`
